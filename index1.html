@@ -1,0 +1,56 @@
+<!-- make a form with 2 input fields, 3 checkboxes (only 1 should be selectable), and a dropdown. Create a submit button (green colored) and reset button(black colored). every field is mandatory and shows the submit on a new page or at least in the console
+or else in the alert box. when you click on reset -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>form</title>
+</head>
+
+<body>
+    <form id="myform" action="" onsubmit="myfun()">
+        <label for="name">Name</label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email">
+        <br>
+        <label for="subject"> Math</label>
+        <input type="checkbox" name="fav" checked>
+        <br>
+        <label for="Subject">Science</label>
+        <input type="checkbox" name="fav">
+        <br>
+
+        <label for="sunject">Hindi</label>
+        <input type="checkbox" name="fav">
+        <br>
+        <label for="cars">chose your car</label>
+        <select name="cars" id="cars">
+            <option value="CAR1">Car1</option>
+            <option value="CAR2">Car2</option>
+            <option value="CAR3">Car3</option>
+        </select>
+        <br>
+        <label for="button"></label>
+        <input type="submit" id="mybtn"><br><br>
+        <label for="button"></label>
+        <input type="reset" id="mybtn2">
+
+    </form>
+    <script>
+        function myfun() {
+
+            console.log(document.getElementById('myform').submit());
+            // https: //www.youtube.com/watch?v=ikR9DsGMUMc
+
+        }
+    </script>
+</body>
+
+</html>
